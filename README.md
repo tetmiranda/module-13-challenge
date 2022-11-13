@@ -28,11 +28,11 @@ The instructions for this Challenge are divided into the following subsections:
 Using your knowledge of Pandas and StandardScaler from scikit-learn, preprocess the dataset so that you can later use it to compile and evaluate the neural network model. To do so, complete the following steps:
 
 1. Read the applicants_data.csv file into a Pandas DataFrame. Review the DataFrame, checking for categorical variables that will need to be encoded and for columns that might eventually define your features and target variables.
-
+![module-13-challenge](Images/applicants_data.JPG)
 2. Drop the “EIN” (Employer Identification Number) and “NAME” columns from the DataFrame, because they’re irrelevant for the binary classification model.
-
+![module-13-challenge](Images/drop_ein_name.JPG)
 3. Encode the categorical variables of the dataset by using OneHotEncoder, and then place the encoded variables in a new DataFrame.
-
+![module-13-challenge](Images/onehotencoder.JPG)
 4. Add the numerical variables of the original DataFrame to the DataFrame that contains the encoded variables
 
 **NOTE** 
@@ -40,11 +40,11 @@ Using your knowledge of Pandas and StandardScaler from scikit-learn, preprocess 
 To complete this step, use the Pandas concat function.
 
 5. Using the preprocessed data, create the features (X) and target (y) datasets. The “IS_SUCCESSFUL” column in the preprocessed DataFrame should define the target dataset. The remaining columns should define the features dataset.
-
+![module-13-challenge](Images/issuccessful.JPG)
 6. Split the features and target datasets into training and testing datasets.
 
 7.  Use StandardScaler from scikit-learn to scale the features data.
-
+![module-13-challenge](Images/split_standardscaler.JPG)
 # Compile and Evaluate a Binary Classification Model Using a Neural Network
 Use your knowledge of TensorFlow to design a binary classification deep neural network model. This model should use the features of the dataset to predict whether a startup that’s funded by Alphabet Soup will become successful. Consider the number of inputs before determining both the number of layers that your model will contain and the number of neurons on each layer. Then compile and fit your model. Finally, evaluate your binary classification model to calculate the model’s loss and accuracy.
 
@@ -61,9 +61,9 @@ You can start with a two-layer deep neural network model that uses the relu acti
 When fitting the model, start with a small number of epochs, such as 20, 50, or 100.
 
 3. Evaluate the model by using the test data to determine the model’s loss and accuracy.
-
+![module-13-challenge](Images/model_sequential_summ.JPG)
 4. Save and export your model to an HDF5 file, and name the file AlphabetSoup.h5.
-
+![module-13-challenge](Images/fit_evaluate_save.JPG)
 # Optimise the Neural Network Model
 Using your knowledge of TensorFlow and Keras, optimise your model to improve its accuracy. Even if you don’t achieve a better accuracy, you'll need to demonstrate at least two attempts to optimise the model. You can include these attempts in your existing notebook. Or, you can make copies of the starter notebook in the same folder, rename them, and code each model optimisation in a new notebook.
 
@@ -90,4 +90,17 @@ _Recall that perfect accuracy has a value of 1, so accuracy improves as its valu
 
 7. Display the accuracy scores that each model achieved, and then compare the results.
 
+![module-13-challenge](Images/opt_orig_model.JPG)
+
+![module-13-challenge](Images/opt_model_alt1.JPG)
+
+![module-13-challenge](Images/opt_model_alt2.JPG)
+
 8. Save each model as an HDF5 file.
+
+![module-13-challenge](Images/opt_A1_model_results.JPG)
+
+![module-13-challenge](Images/opt_A2_model_results.JPG)
+
+![module-13-challenge](Images/save_A1_A2_HD5file.JPG)
+
